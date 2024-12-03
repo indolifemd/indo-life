@@ -49,6 +49,9 @@ RUN sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/inst
 # Set the working directory inside the container
 WORKDIR /home/container
 
+# Make sure the entrypoint.sh is executable
+RUN chmod +x /entrypoint.sh
+
 # Copy the entrypoint script
 COPY ./entrypoint.sh /entrypoint.sh
 
