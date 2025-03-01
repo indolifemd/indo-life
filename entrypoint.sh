@@ -13,7 +13,7 @@ NC='\033[0m' # No Color
 clear
 echo -e "${RED}"
 echo "=============================="
-echo -e "     ${MAGENTA}Welcome to IndoLife${NC}     "
+echo -e "     ${MAGENTA}Welcome to X4Piss${NC}     "
 echo "=============================="
 echo -e "${NC}"
 sleep 1
@@ -28,7 +28,6 @@ done
 echo -e "${NC}\n"
 
 # Informasi Sistem
-OS=$(lsb_release -d | awk -F'\t' '{print $2}')
 IP=$(hostname -I | awk '{print $1}')
 CPU=$(grep -m1 'model name' /proc/cpuinfo | awk -F': ' '{print $2}')
 RAM=$(awk '/MemTotal/ {printf "%.2f GB", $2/1024/1024}' /proc/meminfo)
