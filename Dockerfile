@@ -4,7 +4,17 @@ FROM node:20-bullseye-slim
 # Metadata about the image
 LABEL author="IndoLife" \
       maintainer="arkindolife@gmail.com" \
-      description="A Docker image for running Node.js applications with PM2 and essential utilities."
+      description="A Docker image for running Node.js applications with PM2 and essential utilities." \
+      org.opencontainers.image.title="IndoLife Node.js 20 Base" \
+      org.opencontainers.image.description="Custom Node.js 20 image with PM2, Git auto-clone, and essential system utilities for Pterodactyl." \
+      org.opencontainers.image.version="2.3.4" \
+      org.opencontainers.image.url="https://github.com/indolifemd/indo-life" \
+      org.opencontainers.image.source="https://github.com/indolifemd/indo-life" \
+      org.opencontainers.image.documentation="https://github.com/indolifemd/indo-life/wiki" \
+      org.opencontainers.image.authors="IndoLife Dev <arkindolife@gmail.com>" \
+      org.opencontainers.image.licenses="MIT" \
+      org.opencontainers.image.revision="latest" \
+      org.opencontainers.image.created="2025-05-04T00:00:00Z"
 
 # Update and install required dependencies
 RUN apt update && apt -y install \
