@@ -16,6 +16,16 @@ LABEL author="IndoLife" \
       org.opencontainers.image.revision="latest" \
       org.opencontainers.image.created="2025-05-04T00:00:00Z"
 
+      
+# ARG untuk metadata saat build
+ARG IMAGE_VERSION
+ARG IMAGE_REVISION
+ARG IMAGE_CREATED
+
+# Simpan sebagai environment variable di container
+ENV IMAGE_VERSION=$IMAGE_VERSION
+ENV IMAGE_REVISION=$IMAGE_REVISION
+ENV IMAGE_CREATED=$IMAGE_CREATED
 # Update and install required dependencies
 RUN apt update && apt -y install \
         ffmpeg \
