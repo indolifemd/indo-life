@@ -18,6 +18,13 @@ echo "=============================="
 echo -e "${NC}"
 sleep 1
 
+# Menampilkan Docker Image Metadata
+echo -e "${CYAN}Docker Image Metadata:${NC}"
+echo -e "${GREEN}Version :${NC} $IMAGE_VERSION"
+echo -e "${GREEN}Revision:${NC} $IMAGE_REVISION"
+echo -e "${GREEN}Created :${NC} $IMAGE_CREATED"
+sleep 1
+
 # Animasi Loading
 echo -e "${CYAN}Loading system information...${NC}"
 sleep 1
