@@ -34,6 +34,9 @@ docker buildx build . \
   --label org.opencontainers.image.licenses="MIT" \
   --label org.opencontainers.image.revision="$REVISION" \
   --label org.opencontainers.image.created="$CREATED" \
+  --build-arg IMAGE_VERSION="$VERSION" \
+  --build-arg IMAGE_REVISION="$REVISION" \
+  --build-arg IMAGE_CREATED="$CREATED" \
   --push  # Hapus baris ini jika belum mau push otomatis
 
 # Selesai
